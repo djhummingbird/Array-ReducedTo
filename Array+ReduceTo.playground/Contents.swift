@@ -3,10 +3,6 @@ import Foundation
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
-var previousArray1 = [1, 2, 3, 4, 5]
-var previousArray2 = [1, 2, 3, 4, 5]
-let newArray = [1, 2, 3, 5]
-
 extension Array {
     
     /**
@@ -71,6 +67,10 @@ extension Array where Element: Equatable {
     }
     
 }
+
+var previousArray1 = [1, 2, 3, 4, 5]
+var previousArray2 = [1, 2, 3, 4, 5]
+let newArray = [1, 2, 3, 5]
 
 previousArray1.reduced(to: newArray)
 previousArray1.reduced(to: newArray) { $0 == $1 }
