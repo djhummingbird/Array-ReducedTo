@@ -3,6 +3,8 @@ import Foundation
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
+// MARK: -
+
 extension Array {
     
     /**
@@ -51,6 +53,8 @@ extension Array {
     
 }
 
+// MARK: -
+
 extension Array where Element: Equatable {
     
     /**
@@ -67,6 +71,8 @@ extension Array where Element: Equatable {
     }
     
 }
+
+// MARK: - Example
 
 var previousArray1 = [1, 2, 3, 4, 5]
 var previousArray2 = [1, 2, 3, 4, 5]
